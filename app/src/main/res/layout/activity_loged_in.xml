@@ -1,0 +1,56 @@
+<TableLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:stretchColumns="1,0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/one"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="8dp"
+        android:text="Add book"
+        android:background="@drawable/button"
+        />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button2"
+        android:text="Add student"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/one"
+        />
+    </TableRow >
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/three"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="8dp"
+            android:text="Add book"
+            android:background="@drawable/button3"
+            />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button4"
+            android:text="Add student"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/one"
+            />
+    </TableRow>
+
+</TableLayout>
