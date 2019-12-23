@@ -1,9 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AddBook">
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Name"
+        android:id="@+id/BookName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Description"
+        android:id="@+id/Description"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:id="@+id/Price"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Author"
+        android:id="@+id/Author"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:text="ADD BOOK"
+        android:background="#CE30E614"
+        android:id="@+id/AddBook"/>
+    <Button
+        android:layout_width="300dp"
+        android:background="#9500BCD4"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Back To Home"
+        android:id="@+id/BackToHome"/>
+
+
+</LinearLayout>

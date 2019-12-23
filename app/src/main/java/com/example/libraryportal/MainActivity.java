@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText e1,e2;
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent=new Intent(getApplicationContext(),LogedIn.class);
                     startActivity(intent);
                 }
+                else
+                    Toast.makeText(getApplicationContext(),"Error...!",Toast.LENGTH_LONG).show();
             }
         });
     }
