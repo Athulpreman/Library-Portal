@@ -1,9 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<TableLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AddStudent">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:stretchColumns="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="studentname"
+            android:layout_marginLeft="20dp"/>
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:id="@+id/studentname"
+            android:layout_marginRight="20dp"/>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="admission"
+            android:layout_marginLeft="20dp"/>
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:id="@+id/admission"
+            android:inputType="number"
+            android:layout_marginRight="20dp"/>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="college"
+            android:layout_marginLeft="20dp"/>
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:id="@+id/college"
+            android:layout_marginRight="20dp"/>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="rollno"
+            android:layout_marginLeft="20dp"/>
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:id="@+id/rollno"
+            android:inputType="number"
+            android:layout_marginRight="20dp"/>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="parentname"
+            android:layout_marginLeft="20dp"/>
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:id="@+id/parentname"
+            android:layout_marginRight="20dp"/>
+    </TableRow>
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:text="mobile"
+                android:layout_marginLeft="20dp"/>
+            <EditText android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:id="@+id/mobile"
+                android:inputType="number"
+                android:layout_marginRight="20dp"/>
+        </TableRow>
+    <TableRow>
+        <TextView/>
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="submit"
+            android:id="@+id/submit"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="30dp"
+            android:background="#B0FFEB3B" />
+    </TableRow>
+    <TableRow>
+        <TextView/>
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Back Home"
+            android:id="@+id/BackHome"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="30dp"
+            android:background="#B22196F3" />
+    </TableRow>
+</TableLayout>
