@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LogedIn"></activity>
+        <activity android:name=".SearchStudent"></activity>
+        <activity android:name=".BookSearch" />
+        <activity android:name=".AddBook" />
+        <activity android:name=".AddStudent" />
+        <activity android:name=".LogedIn" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
